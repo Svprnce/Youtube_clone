@@ -1,0 +1,290 @@
+.header{
+    height: 3.5em;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    -webkit-box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+    -moz-box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+    box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+}
+.lg_none{
+    display: none;
+}
+.header > *{
+    display: flex;
+    padding: 0.2em;
+    align-items: center;
+    
+}
+.header_first{
+    flex: 0 0 10%;
+    justify-content: flex-start;
+}
+
+.header_menu_btn{
+    width: max-content;
+}
+.header_menu_btn > *{
+    width: 2em;
+    height: 1.7em;
+}
+.header_logo{
+    width: max-content;
+    height: max-content;
+}
+.header_yt_logo{
+    width: 5.5em;
+    height: 3em;
+}
+.header_second{
+    flex-direction: column;
+    flex: 0 1 35%;
+    justify-content: center;
+    position: relative;
+}
+.header_search_area{
+    display: flex;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+-moz-box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
+}
+.header_search_area > *{
+    padding: 0.7em;
+    height: 35px;
+}
+.header_search_area > input{ 
+    
+    border-radius: 10px;
+}
+.header_search_area > button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    color: red;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header_search_area > button > *{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 35px;
+    color: black;
+}
+.header_suggestion_area{
+    position: absolute;
+    width: 97%;
+    top: 50;
+    left: 10;
+    z-index: 1000;
+
+    
+}
+.header_suggestion_area > ul{
+    background-color: beige;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+.header_suggestion_area > ul > li > p{
+    padding: 0.1em;
+    display: flex;
+    gap: 0.2em;
+}
+.header_suggestion_area > ul > li > p > span{
+    width: max-content;
+}
+.header_third{
+    flex: 0 0 20%;
+}
+
+.avatar{
+    display: flex;
+    justify-content: end;
+    gap: 0.2em;
+}
+.avatar > *{
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+/* ------------------------------- NAVBAR MENU ----------------------------------*/
+
+nav, .closed_nav{
+    width: 17%;
+    min-height: max-content;
+    padding: 0.5em;
+    min-width: max-content;
+    background-color: white;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+}
+.nav{
+    border-bottom: 1px solid black;
+    
+}
+.nav_heading{
+    margin-block: 0.5em;
+}
+.nav_li, .closed_nav_li{
+    margin-block: 5px;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.nav_li:hover, .closed_nav_li:hover{
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.closed_nav{
+    width: 7%;
+    min-width: max-content;
+    height: 100vh;
+    background-color: white;
+}
+.closed_nav_li{
+    text-align: center;
+}
+/* ---------------------------------MAIN ------------------------------------*/
+
+
+main{
+    display: flex;
+}
+/* ------------------------ VIDEO CONTAINER ------------------------------------ */
+.container{
+    min-width: 90%;
+    /* width: 90%; */
+}
+.video_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,auto));
+    justify-content: space-between;
+    height: max-content;
+    
+}
+
+.video_root{
+    /* width: 450px; */
+    width: 100%;
+    max-width: 360px;
+    height: calc(200px + 7em);
+    padding: 0.5em;
+    display: grid;
+    
+}
+.video{
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    /* width: 426px;
+    height: 240px; */
+}
+.video > img{
+    border-radius: 8px;
+    justify-content: center;
+    height: 180px;
+    /* width: 320px; */
+}
+.video_info{
+    padding: 0.5em;
+    display: flex;
+    gap: 0.1em;
+}
+.video_info_column_one{
+    margin-block: 0.5em;
+    width: 10%;
+}
+.video_info_column_one > *{
+    width: 25px;
+    height: 25px;
+}
+.video_info_column_two{
+    display: grid;
+    gap: 0.2em;
+}
+
+/* --------------------- SUGGESTIONBARL ----------------------------------------- */
+.suggestion_bar{
+    /* overflow: scroll;    for Mobile */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5em;
+}
+.suggestion_bar_ul{
+    width: max-content;
+    display: flex;
+    gap: 0.2em;
+}
+.suggestion_bar_li{
+    width: max-content;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+
+/* ------------------------ MEDIA  QUERY ----------------------------*/
+
+
+@media screen and (max-width: 768px){
+    .lg_none{
+        display: block;
+    }
+    .header_none{
+        display: none;
+    }
+    /* .header_first{
+        display: none;
+    } */
+    .searchbar_full > *{
+        margin-left: 1em;
+        border: 1px solid grey;
+        /* padding: 0.1em; */
+        width: 90vw;
+    }
+    .search_logo{
+        position: relative;
+    }
+    /* .header_search_area{
+        display: none;
+    } */
+    .search_logo > *{
+        position: absolute;
+        top: -12;
+        right: 0;
+        width: 25px;
+        height: 25px;
+    }
+    .header_third{
+        display: none;
+    }
+    .closed_nav{
+        width: max-content;
+        position: absolute;
+    }
+    .close_btn{
+        width: 20px;
+        height: 20px;
+        color: black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .suggestion_bar{
+        overflow: scroll;
+    }
+    .video_root{
+        /* margin-left: 1em; */
+        max-width: 380px;
+    }
+  }
