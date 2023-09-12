@@ -14,7 +14,7 @@ const router = createBrowserRouter([{
       element : <Body/>,
    },
    {
-      path : 'watch/:id',
+      path : '/watch/:id',
       element : <Suspense fallback={<h2>Container Loading</h2>}><Watchpagecontainer/></Suspense>
 }]
 }])
