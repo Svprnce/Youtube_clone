@@ -14,19 +14,19 @@ const Video = ()=>{
       if (isError) {
         return <span>Error: {error.message}</span>
       }
-      (async function fetchData() {
-        try {
-          const response = await fetch('/functions/hellonew');
-          if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-          } else {
-            console.error('Serverless function request failed');
-          }
-        } catch (error) {
-          console.error('An error occurred:', error);
-        }
-      })()
+    //   (async function fetchData() {
+    //     try {
+    //       const response = await fetch(`https://youtube-clone-react-sv.netlify.app/.netlify/functions/hellonew?query=hji`);
+    //       if (response.ok) {
+    //         const data = await response.json();
+    //         console.log(data);
+    //       } else {
+    //         console.error('Serverless function request failed');
+    //       }
+    //     } catch (error) {
+    //       console.error('An error occurred:', error);
+    //     }
+    //   })()
       
     return (
         <section className="video_container">
