@@ -11,7 +11,7 @@ import { toggleMenu } from '../store/MenuSlice';
 
 export async function autosuggest(searchtext) {
     try {
-        let data = await fetch(`http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=${searchtext}`)
+        let data = await fetch(`https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=${searchtext}`)
         let d = await data.json()
         return d
     }
