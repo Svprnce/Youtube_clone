@@ -16,7 +16,7 @@ const Video = ()=>{
       }
       (async function fetchData() {
         try {
-          const response = await fetch('/.netlify/functions/hello');
+          const response = await fetch('/functions/hellonew');
           if (response.ok) {
             const data = await response.json();
             console.log(data);
