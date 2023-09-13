@@ -14,6 +14,20 @@ const Video = ()=>{
       if (isError) {
         return <span>Error: {error.message}</span>
       }
+      (async function fetchData() {
+        try {
+          const response = await fetch('/.netlify/functions/hello');
+          if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+          } else {
+            console.error('Serverless function request failed');
+          }
+        } catch (error) {
+          console.error('An error occurred:', error);
+        }
+      })()
+      
     return (
         <section className="video_container">
             {data.data?.items?.map((c,i)=>{
