@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Button from '../utils/button';
 import '../watchpage.css'
 import { RxAvatar } from 'react-icons/rx';
@@ -6,7 +6,6 @@ import { RxAvatar } from 'react-icons/rx';
 const Watchvideoroot = () => {
     const channel_btns = ['Subscribe', 'Join']
     const channel_actions_btns = ['Like', 'Share', 'Thanks']
-    const info = useParams()
     const {state} = useLocation()
     // console.log(state.snippet?.description);
     // console.log(state.snippet?.localized?.title);

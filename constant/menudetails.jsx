@@ -11,18 +11,19 @@
 // import {TfiYoutube} from 'react-icons/tfi';
 // import {AiFillSetting} from 'react-icons/ai'
 
+
 export const menu_content_open = [{
     content: [
         {
-            // img: <AiFillHome/>,
+            img: '<AiFillHome/>',
             name: 'Home'
         },
         {
-            // img: <FiTrendingUp/>,
+            img: '<FiTrendingUp/>',
             name: 'Shorts'
         },
         {
-            // img: <MdSubscriptions/>,
+            img: '<MdSubscriptions/>',
             name: 'Subscriptions'
         }
     ]
@@ -53,23 +54,23 @@ export const menu_content_open = [{
     heading: 'Subscriptions',
     content: [
         {
-            // img: <BsPersonCircle/>,
+            img: '<BsPersonCircle/>',
             name: 'Tech With Tim'
         },
         {
-            // img: <BsPersonCircle/>,
+            img: '<BsPersonCircle/>',
             name: 'Madan Gowri'
         },
         {
-            // img: <BsPersonCircle/>,
+            img: '<BsPersonCircle/>',
             name: 'Telusko'
         },
         {
-            // img: <BsPersonCircle/>,
+            img: '<BsPersonCircle/>',
             name: 'Free Code Camp'
         },
         {
-            // img: <BsPersonCircle/>,
+            img: '<BsPersonCircle/>',
             name: 'Sun Tv'
         }
     ]
@@ -77,31 +78,31 @@ export const menu_content_open = [{
     heading: 'Explore',
     content: [
         {
-            // img: <FiTrendingUp/>,
+            img: '<FiTrendingUp/>',
             name: 'Trending'
         },
         {
-            // img: <AiFillShopping/>,
+            img: '<AiFillShopping/>',
             name: 'Shopping'
         },
         {
-            // img: <ImMusic/>,
+            img: '<ImMusic/>',
             name: 'Music'
         },
         {
-            // img: <MdLocalMovies/>,
+            img: '<MdLocalMovies/>',
             name: 'Movies'
         },
         {
-            // img: <MdLiveTv/>,
+            img: '<MdLiveTv/>',
             name: 'Live'
         },
         {
-            // img: <CgGames/>,
+            img: '<CgGames/>',
             name: 'Gaming'
         },
         {
-            // img: <BiNews/>,
+            img: '<BiNews/>',
             name: 'News'
         },
         {
@@ -121,55 +122,55 @@ export const menu_content_open = [{
     heading: 'More From Youtube',
     content: [
         {
-            // img: <TbBrandYoutube/>,
+            img: '<TbBrandYoutube/>',
             name: 'Youtube Premium'
         },
         {
-            // img: <SiYoutubestudio/>,
+            img: '<SiYoutubestudio/>',
             name: 'Youtube Studio'
         },
         {
-            // img: <SiYoutubemusic/>,
+            img: '<SiYoutubemusic/>',
             name: 'Youtube Music'
         },
         {
-            // img: <TfiYoutube/>,
+            img: '<TfiYoutube/>',
             name: 'Youtube Kids'
         }
     ]
 }, {
     content: [
         {
-            // img: <AiFillSetting/>,
+            img: '<AiFillSetting/>',
             name: 'Settings'
         },
         {
-            // img: <MdReport/>,
+            img: '<MdReport/>',
             name: 'Report History'
         },
         {
-            // img: <BiHelpCircle/>,
+            img: '<BiHelpCircle/>',
             name: 'Help'
         },
         {
-            // img: <MdFeedback/>,
+            img: '<MdFeedback/>',
             name: 'Send Feedback'
         }
     ]
 }]
 export const menu_content_closed = [{
+    img: '<AiFillHome/>',
     name: 'Home',
-    // img: <AiFillHome/>
 },
-{
+ {
+     img: '<TbBrandYoutube/>',
     name: 'Shorts',
-    // img: <TbBrandYoutube/>
 },
 {
+    img: '<MdSubscriptions/>',
     name: 'Subscribtions',
-    // img: <MdSubscriptions/>
 },
 {
+    img: '<AiFillSetting/>',
     name: 'Setting',
-    // img: <AiFillSetting/>
 }]

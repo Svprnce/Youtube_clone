@@ -88,7 +88,7 @@ box-shadow: -7px 10px 25px -15px rgba(0,0,0,0.84);
     
 }
 .header_suggestion_area > ul{
-    background-color: beige;
+    background-color: #C5C5C5;
     border-radius: 10px;
     padding: 0.5em;
 }
@@ -122,7 +122,7 @@ nav, .closed_nav{
     min-height: max-content;
     padding: 0.5em;
     min-width: max-content;
-    background-color: white;
+    background-color: #C5C5C5;
     /* overflow: scroll;
     overflow-x: hidden; */
 }
@@ -134,6 +134,7 @@ nav, .closed_nav{
     margin-block: 0.5em;
 }
 .nav_li, .closed_nav_li{
+    display: flex;
     margin-block: 5px;
     border-radius: 5px;
     padding: 0.5em;
@@ -146,7 +147,6 @@ nav, .closed_nav{
     width: 7%;
     min-width: max-content;
     height: 100vh;
-    background-color: white;
 }
 .closed_nav_li{
     text-align: center;
@@ -167,10 +167,10 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px,auto));
     justify-content: space-between;
+    gap: 0.3em;
     height: max-content;
     
 }
-
 .video_root{
     /* width: 450px; */
     width: 100%;
@@ -178,6 +178,9 @@ main{
     height: calc(200px + 7em);
     padding: 0.5em;
     display: grid;
+    -webkit-box-shadow: 5px 5px 18px -5px rgba(0,0,0,0.63); 
+box-shadow: 5px 5px 18px -5px rgba(0,0,0,0.63);
+border-radius: 0.5em;
     
 }
 .video{
@@ -199,6 +202,7 @@ main{
     padding: 0.5em;
     display: flex;
     gap: 0.1em;
+    /* position: relative; */
 }
 .video_info_column_one{
     margin-block: 0.5em;
@@ -212,7 +216,6 @@ main{
     display: grid;
     gap: 0.2em;
 }
-
 /* --------------------- SUGGESTIONBARL ----------------------------------------- */
 .suggestion_bar{
     /* overflow: scroll;    for Mobile */
@@ -256,9 +259,17 @@ main{
     .search_logo{
         position: relative;
     }
-    /* .header_search_area{
-        display: none;
-    } */
+    .header_search_area{
+        box-shadow: none;
+    }
+    .header_search_area > button > button{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 2em;
+        height: 2.4em;
+        margin: auto;
+        /* z-index: 1000px; */
+    }
     .search_logo > *{
         position: absolute;
         top: -12;
@@ -274,17 +285,23 @@ main{
         position: absolute;
     }
     .close_btn{
-        width: 20px;
-        height: 20px;
+        /* border: 1px solid black; */
+        width: 1.4em;
+        height: 1.4em;
         color: black;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        /* border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; */
     }
     .suggestion_bar{
         overflow: scroll;
     }
+    .video_container > a{
+        width: 100vw;
+        margin: 0px auto;
+    }
     .video_root{
         /* margin-left: 1em; */
         max-width: 380px;
+        margin: 0px auto;
     }
   }

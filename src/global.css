@@ -27,7 +27,7 @@ a{
     color: black;
 }
 a:visited{
-    color: purple
+    color:#808080;
 }
 
 @media screen and (max-width: 768px){

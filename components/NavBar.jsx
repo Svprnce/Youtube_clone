@@ -3,7 +3,10 @@ import { memo } from "react";
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector"
 import useMobileDetect from "../Hooks/useMobiledetect";
-import { menu_content_closed, menu_content_open } from "../constant/menudetails";
+import {menu_content_closed, menu_content_open } from "../constant/menudetails";
+
+
+
 
 const MobileNav = memo(()=>{
     return (
@@ -13,7 +16,6 @@ const MobileNav = memo(()=>{
                     return(
                         <li key={i} className="closed_nav_li">
                             <p>{c.name}</p>
-                            <p>{c.img}</p>
                         </li>
                     )
                 })}

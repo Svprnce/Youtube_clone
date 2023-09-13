@@ -55,11 +55,11 @@ const Header = () => {
 
             <div className='header_second'>
                 <div className={searchbaropen ? 'header_search_area searchbar_full' : 'header_search_area header_none'}>
-                    <input type="text" placeholder="search" onChange={(e) => {
+                    <input type="text" placeholder="search" value={searchtext} onChange={(e) => {
                         e.preventDefault()
                         setSearchtext(e.target.value)
                     }} />
-                    <button onClick={() => { if (ismobile) { setSearchbaropen(!searchbaropen) } }}>{ismobile ? (searchbaropen ? (<button className='close_btn' onClick={() => { setSearchtext('') }}><AiOutlineClose className='close_btn' /></button>) : <FiSearch />) : <FiSearch />}</button>
+                    <button onClick={() => { if (ismobile) { setSearchbaropen(!searchbaropen) } }}>{ismobile ? (searchbaropen ? (<button className='close_btn' onClick={() => { setSearchtext(''); console.log('clicked') }}><AiOutlineClose className='close_btn' /></button>) : <FiSearch />) : <FiSearch />}</button>
                 </div>
                 <button onClick={() => { setSearchbaropen(!searchbaropen) }} className={!searchbaropen ? 'search_logo lg_none' : 'lg_none header_none'}><FiSearch /></button>
                 <div className="header_suggestion_area">

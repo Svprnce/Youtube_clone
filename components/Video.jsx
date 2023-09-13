@@ -29,8 +29,8 @@ const Video = ()=>{
                         </div>
                         <div className="video_info_column_two">
                             <h2>{c.snippet?.title}</h2>
-                            <p>{c.snippet?.channelTitle}</p>
-                            <p>{c.statistics?.viewCount} - <span> 7 hours Ago </span></p>
+                            <p className='video_channel_title'>{c.snippet?.channelTitle}</p>
+                            <p className='video_channel_count'>{c.statistics?.viewCount} - <span> 7 hours Ago </span></p>
                         </div>
                     </div>
                 </div></Link>
